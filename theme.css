@@ -95,21 +95,26 @@ a{
     padding: 16px;
     z-index: 10;
 
-    width: 90%;
-    max-width: 960;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-/* .siteTitleWrapper {
-    margin: 0 16px;
-    max-width: 960;
-    display: flex;
-    justify-content: space-between;
+.header-background {
+    background-color: #060809;
+    position: sticky;
     top: 0;
-    z-index: 10;
-} 
-*/
+    height: 75px;
+    padding: 16px;
+    z-index: 9;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    opacity: .8;
+}
 
 .siteTitle {
     margin: 0;
@@ -213,12 +218,13 @@ a{
     position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
-    height: 1vh;
+    height: 8vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    padding: 24px 16px;
+    padding: .5vh 1vh;
+    box-sizing: border-box;
 }
 
 .category-footer{
@@ -229,7 +235,11 @@ a{
 }
 
 .socialLink{
-    color: var(--accent-color);
+    padding: 0 1vw;
+}
+
+.socialLink>img{
+    height: 3vh;
 }
 
 .category-body{
@@ -242,10 +252,17 @@ a{
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: scroll;
+    /* hide scrollbar on IE & Edge */
+    -ms-overflow-style: none; 
+}
+/* hide scrollbar on chrome, safari, opera */
+.category-body::-webkit-scrollbar {
+    display: none;
 }
 
 .video-content, .voice-content{
-    margin-top: 100px;
+    margin-top: 2vh;
     overflow: scroll;
     z-index: 4;
 }
@@ -262,7 +279,7 @@ a{
     align-items: flex-start;
 }
 
-.video-page-header {
+.video-page-title {
     color: var(--accent-color);
     width: 100%;
     font-size: 5vw;
@@ -284,7 +301,7 @@ iframe{
     height: 22vw;
 }
 
-.voice-page-header{
+.voice-page-title{
     color: var(--accent-color);
     width: 100%;
     font-size: 5vw;
@@ -296,6 +313,7 @@ iframe{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 5vh;
 }
 
 .voice-entry{
@@ -305,7 +323,17 @@ iframe{
     color: var(--main-light-color);
     font-size: 1.5vw;
     margin-bottom: 32px;
+    font-size: 16px;
 }
+
+/* Audio Player */
+.plyr--audio{
+    width: 60vw;
+    margin: 16px;
+    border-radius: 0;
+    background-color: darkgray;
+}
+
 
 /* About & Contact Pages */
 .page-content{

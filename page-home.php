@@ -1,4 +1,24 @@
-<div class="body">
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    const voiceHeader = document.querySelector('.optionLeft');
+    const videoHeader = document.querySelector('.optionRight');
+
+    const voiceAudio = document.querySelector('.voice-audio');
+    const videoAudio = document.querySelector('.video-audio');
+
+    videoHeader.addEventListener('mouseover', () => {
+        voiceAudio.ended = true
+        videoAudio.play()
+    })
+
+    voiceHeader.addEventListener('mouseover', () => {
+        videoAudio.ended = true
+        voiceAudio.play()
+    })
+});
+</script>
+
 <?php get_header(); ?>
     <main class="contentHome">
         <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0, 0, 100, 100" class="panels">
@@ -10,9 +30,12 @@
             <!-- <img class="voice-icon" src="http://localhost:8888/wp-content/uploads/2020/04/voice-icon.png"/> -->
                 Voice Actor
             </a>
+            <audio allow="autoplay" class="voice-audio" src='http://localhost:8888/wp-content/uploads/2020/05/Voice.mp3' display="none"> </audio>            
             <a class="optionRight" href="video">
                 Video Editor
+            </a>
+            <audio allow="autoplay" class="video-audio" src='http://localhost:8888/wp-content/uploads/2020/05/Video.mp3' display="none"> </audio> 
                 <!-- <img class="video-icon"src="http://localhost:8888/wp-content/uploads/2020/04/video-icon.png"> -->
+        </div>
     </main>
-</body>
-</div>
+<?php get_footer(); ?>

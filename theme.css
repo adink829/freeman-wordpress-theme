@@ -215,8 +215,8 @@ a{
 }
 
 .footer {
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     height: 8vh;
     display: flex;
@@ -239,7 +239,7 @@ a{
 }
 
 .socialLink>img{
-    height: 3vh;
+    height: 3.5vh;
 }
 
 .category-body{
@@ -330,10 +330,12 @@ iframe{
 .plyr--audio{
     width: 60vw;
     margin: 16px;
-    border-radius: 0;
-    background-color: darkgray;
+    border-radius: 20px;
 }
 
+.plyr--audio .plyr__controls{
+    background: lightgray;
+}
 
 /* About & Contact Pages */
 .page-content{
@@ -345,6 +347,8 @@ iframe{
 .page-header{
     color: var(--accent-color);
     font-size: 5vw;
+    margin-top: 15vh;
+    margin-bottom: 3vh;
 }
 
 .page-description{
@@ -355,4 +359,24 @@ iframe{
 
 .page-description a{
     color: var(--accent-color) !important;
+}
+
+.logo-group > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-group img{
+    width: 15vw;
+    height: auto;
+}
+
+.wp-social-link svg {
+    fill: black;
+}
+
+.wp-social-link-mail {
+    background-color: lightgray !important;
 }

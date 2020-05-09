@@ -28,13 +28,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
         <div class="homepageOptions">
             <a class="optionLeft" href="/voice">
             <!-- <img class="voice-icon" src="http://localhost:8888/wp-content/uploads/2020/04/voice-icon.png"/> -->
-                Voice Actor
+                Voice Talent
             </a>
-            <audio allow="autoplay" class="voice-audio" src='http://localhost:8888/wp-content/uploads/2020/05/Voice.mp3' display="none"> </audio>            
-            <a class="optionRight" href="video">
+            <audio allow="autoplay" class="voice-audio" src='http://localhost:8888/wp-content/uploads/2020/05/voice-audio.mp3' display="none"> </audio>            
+            <a class="optionRight" href="/video">
                 Video Editor
             </a>
-            <audio allow="autoplay" class="video-audio" src='http://localhost:8888/wp-content/uploads/2020/05/Video.mp3' display="none"> </audio> 
+            <audio allow="autoplay" class="video-audio" src='http://localhost:8888/wp-content/uploads/2020/05/video-audio.mp3' display="none"> </audio> 
                 <!-- <img class="video-icon"src="http://localhost:8888/wp-content/uploads/2020/04/video-icon.png"> -->
         </div>
     </main>

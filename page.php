@@ -18,5 +18,5 @@
             </main>
     </div>
 
-</div>
-</head>
+</body>
+</html>

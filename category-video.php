@@ -8,13 +8,11 @@
         if ( have_posts() ) : ?>
             <div class="video-columns">
                     <div class="video-column-1">
-                        <?php while(have_posts()) : the_post(); ?>
-                            <?php 
-                                $column1Counter++;
-                                if ($column1Counter % 2 == 0)
-                                {
-                                    continue;
-                                }
+                        <?php while(have_posts()) : the_post();
+                            $column1Counter++;
+                            if ($column1Counter % 2 == 0) {
+                                continue;
+                            }
                             ?>
                                 <div class="video-entry">
                                     <?php the_content(); ?>
@@ -23,18 +21,17 @@
                     </div>
                     <div class="video-column-2">
                         <h1 class="video-page-title">Video</h1>
-                        <?php while(have_posts()) : the_post(); ?>
-                        <?php 
-                                $column2Counter++;
-                                if ($column2Counter % 2 != 0)
-                                {
-                                    continue;
-                                }
-                            ?>
-                                <div class="video-entry">
-                                    <?php the_content(); ?>
-                                </div>
-                        <?php endwhile; ?>
+                            <?php while(have_posts()) : the_post();
+                                    $column2Counter++;
+                                    if ($column2Counter % 2 != 0) {
+                                        continue;
+                                    }
+                                    ?>
+                                        <div class="video-entry">
+                                            <?php the_content(); ?>
+                                        </div>
+                                <?php 
+                             endwhile; ?>
                     </div>
             </div>
                         

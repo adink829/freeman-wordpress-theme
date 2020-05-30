@@ -121,6 +121,10 @@ a {
 	background-color: transparent;
 }
 
+button:focus {
+	outline: 0;
+}
+
 .hamburgerMenu {
 	fill: var(--accent-color);
 	padding: 4px;
@@ -128,11 +132,6 @@ a {
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
-}
-
-.hamburgerMenu:hover {
-	width: 35px;
-	height: 35px;
 }
 
 .menuDropdown {

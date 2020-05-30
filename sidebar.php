@@ -5,7 +5,7 @@
 			<rect y="30" width="100" height="15" rx="8"></rect>
 			<rect y="60" width="100" height="15" rx="8"></rect>
 		</svg>
-		</button>
+	</button>
 	<nav class="menuDropdown" style="display: none;" onMouseOver=handleShowMenu() onMouseOut=handleHideMenu()>
 		<a class="menuItem" href="/">Home</a>
 		<a class="menuItem" href="/voice">Voice</a>

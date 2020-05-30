@@ -156,29 +156,6 @@ button:focus {
 	align-items: flex-end;
 }
 
-@media only screen and (max-width: 812px) {
-	.menuDropdown {
-		width: 105%;
-		height: 105%;
-		left: -1px;
-		top: -1px;
-		align-items: center;
-		font-size: 10vw;
-		background-color: var(--main-dark-color);
-		z-index: 5;
-	}
-
-	.menuItem {
-		color: var(--main-light-color) !important;
-	}
-
-	.hamburgerMenu {
-		padding: 4px;
-		height: 35px;
-		width: 35px;
-	}
-}
-
 .menuItem {
 	text-decoration: none;
 	color: var(--main-dark-color);
@@ -234,9 +211,9 @@ button:focus {
 	font-size: 6.5vw;
 	font-weight: 700;
 	color: var(--main-light-color);
-	position: relative;
-	top: -90px;
-	left: -60px;
+	position: absolute;
+	left: 10%;
+	top: 30%;
 }
 
 .optionLeft:hover {
@@ -247,8 +224,9 @@ button:focus {
 	font-size: 6.5vw;
 	font-weight: 700;
 	color: var(--main-dark-color);
-	position: relative;
-	top: 35px;
+	position: absolute;
+	right: 10%;
+	bottom: 30%;
 }
 
 .optionRight:hover {
@@ -357,14 +335,6 @@ button:focus {
 	color: var(--main-light-color);
 	font-size: 1vw;
 	margin-bottom: 32px;
-}
-
-@media only screen and (max-width: 750px) {
-	.video-entry {
-		float: none;
-		display: block;
-		width: 100%;
-	}
 }
 
 iframe {
@@ -516,4 +486,53 @@ main.content.home-leave-active .panels polygon {
 	-ms-transform: translateX(100%);
 	transform: translateX(100%);
 	opacity: 0;
+}
+
+@media only screen and (max-width: 812px) {
+	.menuDropdown {
+		width: 100%;
+		height: 100%;
+		left: 0px;
+		top: 0px;
+		border: none;
+		align-items: center;
+		font-size: 10vw;
+		background-color: var(--main-dark-color);
+	}
+
+	.menuItem {
+		color: var(--main-light-color);
+	}
+
+	.hamburgerMenu {
+		padding: 4px;
+		height: 35px;
+		width: 35px;
+		z-index: 10;
+	}
+
+	.optionLeft,
+	.optionRight {
+		font-size: 9vw;
+	}
+
+	.logo-group > div {
+		display: flex;
+		display: -webkit-box; /* iOS 6-, Safari 3.1-6, BB7 */
+		display: -ms-flexbox; /* IE 10 */
+		display: -webkit-flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo-group img {
+		width: 40vw;
+		height: auto;
+	}
+
+	.wp-image-197,
+	.wp-image-144 {
+		width: 50vw;
+		height: auto;
+	}
 }

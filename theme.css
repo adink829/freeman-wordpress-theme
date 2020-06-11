@@ -393,8 +393,14 @@ iframe {
 .page-header {
 	color: var(--accent-color);
 	font-size: 5vw;
-	margin-top: 15vh;
+	margin-top: 5vh;
 	margin-bottom: 3vh;
+}
+
+.page-subheader {
+	color: var(--main-light-color);
+	font-size: 2vw;
+	margin-top: 2vh;
 }
 
 .page-description {
@@ -496,7 +502,7 @@ main.content.home-leave-active .panels polygon {
 		top: 0px;
 		border: none;
 		align-items: center;
-		font-size: 10vw;
+		font-size: 8vh;
 		background-color: var(--main-dark-color);
 	}
 

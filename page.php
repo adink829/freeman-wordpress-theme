@@ -1,5 +1,6 @@
 <?php get_header(); ?> 
     <div class="category-body">
+    <div class="header-background"> </div>
         <?php if ( have_posts() ) : ?>
             <main class="page-content">
                 <?php while ( have_posts() ) : the_post(); ?>

@@ -176,27 +176,6 @@ button:focus {
 	z-index: -1;
 }
 
-.panelLeft.animate,
-.optionLeft.animate,
-.panelRight.animate,
-.optionRight.animate {
-	transition: transform 0.4s;
-}
-
-.panelLeft.animate,
-.optionLeft.animate {
-	-webkit-transform: translate(-50vw);
-	-ms-transform: translate(-50vw);
-	transform: translate(-50vw);
-}
-
-.panelRight.animate,
-.optionRight.animate {
-	-webkit-transform: translate(50vw);
-	-ms-transform: translate(50vw);
-	transform: translate(50vw);
-}
-
 .panelLeft {
 	fill: var(--main-dark-color);
 	z-index: 1;
@@ -436,64 +415,6 @@ iframe {
 	background-color: lightgray !important;
 }
 
-main.content.home-enter-active .panels polygon,
-main.content.home-leave-active .panels polygon {
-	transition: -webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-	transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-	transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1),
-		-webkit-transform 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.home-enter-active .call-to-action,
-.home-leave-active .call-to-action {
-	transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-	transition-property: opacity, -webkit-transform;
-	transition-property: transform, opacity;
-	transition-property: transform, opacity, -webkit-transform;
-	transition-duration: 0.6s;
-}
-
-.home-enter-active .call-to-action {
-	transition-delay: 0.4s;
-}
-
-.home-enter .panels polygon,
-.home-leave-to .panels polygon {
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.home-enter-to .panels polygon,
-.home-leave .panels polygon {
-	-webkit-transform: none;
-	-ms-transform: none;
-	transform: none;
-}
-
-.home-enter .call-to-action,
-.home-leave-to .call-to-action {
-	-webkit-transform: translateX(-100%);
-	-ms-transform: translateX(-100%);
-	transform: translateX(-100%);
-	opacity: 0;
-}
-
-.home-enter .panels polygon.light,
-.home-leave-to .panels polygon.light {
-	-webkit-transform: translate(50%, 50%);
-	-ms-transform: translate(50%, 50%);
-	transform: translate(50%, 50%);
-}
-
-.home-enter .call-to-action.light,
-.home-leave-to .call-to-action.light {
-	-webkit-transform: translateX(100%);
-	-ms-transform: translateX(100%);
-	transform: translateX(100%);
-	opacity: 0;
-}
-
 @media only screen and (max-width: 812px) {
 	.menuDropdown {
 		width: 100%;
@@ -519,7 +440,7 @@ main.content.home-leave-active .panels polygon {
 
 	.optionLeft,
 	.optionRight {
-		font-size: 9vw;
+		font-size: 8vw;
 	}
 
 	.logo-group > div {
